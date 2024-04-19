@@ -1,20 +1,14 @@
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import SearchIcon from '@mui/icons-material/Search';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import BasicModal from './Pages/BasicModal';
-import { TextField } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
-import Women from './Pages/Women';
 function Header() {
   const [menu, setMenu] = useState("")
   const textarr = ["Sign in", "Search", "Favorites", "Shopping bag"]
